@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Upload Successful</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(135deg, #1656a3 0%, #8ab3ec 100%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .box {
+      background: white;
+      padding: 40px 32px;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+      text-align: center;
+      animation: popIn 0.7s cubic-bezier(.68,-0.55,.27,1.55);
+      max-width: 500px;
+      width: 100%;
+    }
+    @keyframes popIn {
+      0% { transform: scale(0.7); opacity: 0; }
+      80% { transform: scale(1.05); opacity: 1; }
+      100% { transform: scale(1); }
+    }
+    .checkmark {
+      font-size: 60px;
+      color: #4CAF50;
+      animation: bounce 1s;
+      margin-bottom: 16px;
+      display: inline-block;
+    }
+    @keyframes bounce {
+      0% { transform: scale(0.5); }
+      60% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+    h1 {
+      color: #4CAF50;
+      margin-bottom: 12px;
+      font-size: 2.2rem;
+      font-weight: bold;
+    }
+    p {
+      font-size: 18px;
+      margin-bottom: 24px;
+    }
+    .btn {
+      background: #4CAF50;
+      color: #fff;
+      border: none;
+      padding: 12px 28px;
+      border-radius: 8px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: background 0.2s;
+      box-shadow: 0 2px 8px rgba(76,175,80,0.08);
+      margin-top: 10px;
+    }
+    .btn:hover {
+      background: #388E3C;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="checkmark">✔️</div>
+    <h1>Upload Successful!</h1>
+    <p>Your Excel file has been uploaded and sent to Google Sheets.</p>
+    <button class="btn" onclick="window.location.href='Upload File.html'">Upload Another File</button>
+  </div>
+</body>
+</html>
